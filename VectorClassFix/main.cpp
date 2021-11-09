@@ -21,7 +21,7 @@ class FileManage :: public Player {
 
 public:
 	string buff;
-	std::fstream PlayerFile;
+	std::fstream 1PlayerFile;
 	std::string address;
 	// default constructor keeps the address just in case there is no file entered 
 	FileManage() {
@@ -58,7 +58,7 @@ public:
 		catch (std::string e) {
 			std::cout << e;
 		}
-		PlayerFile.close();
+		PlayerFile.Close();
 	}
 	void Fileread(std::vector<Player>& readVec) {
 		PlayerFile.clear();
